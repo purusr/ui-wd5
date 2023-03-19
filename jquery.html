@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".firstbutton").click(function () {
+                $(".n1").fadeIn(4000);
+                $(".n2").fadeIn("fast")
+                $('.n3').fadeOut("slow")
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+<div>
+    <p class="firstpara">Hello i am a Jquery example.</p>
+    <button style="background: none; border: none;" class="firstbutton"><i class="fa-solid fa-house"></i></button>
+</div>
+<div>
+<div class="n1" style="width: 400px; height: 100px; background-color: aqua; display: none;">
+    <p>Div number1</p>
+</div>
+<div class="n2" style="width: 400px; height: 100px; background-color:yellow; display: none;">
+    <p>Div number2</p>
+</div>
+<div class="n3" style="width: 400px; height: 100px; background-color: lightgreen;">
+    <p>Div number3</p>
+</div>
+</div>
+</body>
+
+</html>
